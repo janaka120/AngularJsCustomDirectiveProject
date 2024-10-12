@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="directivesModule">
+  <head>
+    <title>Iterating Over Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body ng-controller="CustomersController">
+    <h1>Shared Scope Directive</h1>
+    <shared-scope></shared-scope>
+
+    <h1>Isolate Scope Directive</h1>
+    <isolate-scope></isolate-scope>
+    
+    <h1>Isolate Scope With String Directive</h1>
+    <isolate-scope-with-string name="{{ customer.name }}"></isolate-scope-with-string>
+    
+    <h1>Isolate Scope With Object Directive</h1>
+    <isolate-scope-with-object datasource="customer"></isolate-scope-with-object>
+
+
+    <script src="./angular.js"></script>
+    <script src="./directivesController.js"></script>
+    <script src="./sharedScopeDirective.js"></script>
+    <script src="./isolateScopeDirective.js"></script>
+    <script src="./isolateScopeWithStringDirective.js"></script>
+    <script src="./isolateScopeWithObjectDirective.js"></script>
+  </body>
+</html>
